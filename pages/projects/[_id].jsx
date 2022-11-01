@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Link } from "@chakra-ui/react"
 import { useRouter } from "next/router"
+import Head from "next/head"
 import { useState, useEffect } from "react"
 import json from "./projects.json"
 import { Carousel } from 'react-responsive-carousel';
@@ -28,16 +29,29 @@ export default function ProjectsID(){
 
     console.log(router.query._id)
 
-    if (project === "loading"){
-        return <div>loading ...</div>
-    }
+    if (project === "loading"){ return <div>loading ...</div> }
 
-    if (project === "notFound"){
-        return <div>not found ...</div>
-    }
+    if (project === "notFound"){ return <div>not found ...</div> }
 
     return(
         <Box as="header" bgColor={project.backgroundColor} h="calc(100vh - 100px)">
+<Head>
+  <title>PortFolio Jossuha</title>
+  <meta name="title" content="PortFolio Jossuha"/>
+  <meta name="description" content="See my creations"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://shalltearfr.vercel.app/projects"/>
+  <meta property="og:title" content="PortFolio Jossuha"/>
+  <meta property="og:description" content="See my creations"/>
+  <meta property="og:image" content="/media/meta/projects.jpg"/>
+
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:url" content="https://shalltearfr.vercel.app/projects"/>
+  <meta property="twitter:title" content="PortFolio Jossuha"/>
+  <meta property="twitter:description" content="See my creations"/>
+  <meta property="twitter:image" content="/media/meta/projects.jpg"/>
+</Head>
             <Heading pt="15px" textAlign="center" fontFamily="Ubuntu">{project.title}</Heading>
             <Flex h="65vh" mt="15px">
                 <Box w="50%">

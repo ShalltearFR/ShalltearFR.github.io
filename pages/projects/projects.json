@@ -11,7 +11,7 @@
     {
         "_id": "jmaterial",
         "title": "Jmaterial (Mobile Version)",
-        "images": ["/media/projects/jmaterial/01.jpg", "/media/projects/jmaterial/02.jpg", "/media/projects/jmaterial/03.jpg", "/media/projects/jmaterial/04.jpg", "/media/projects/jmaterial/05.jpg"],
+        "images": ["/media/projects/jmaterial/01.jpg", "/media/projects/jmaterial/02.jpg", "/media/projects/jmaterial/03.jpg", "/media/projects/jmaterial/04.jpg", "/media/projects/jmaterial/05.jpg", "/media/projects/jmaterial/06.jpg", "/media/projects/jmaterial/07.jpg"],
         "backgroundImage": "/media/projects/jmaterial/bg.jpg",
         "backgroundColor": "#D00F10",
         "technos": "HTML, CSS, JS, React, NodeJs, Mongoose, JWT",
