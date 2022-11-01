@@ -4,7 +4,7 @@ import Fonts from '../components/Fonts'
 
 export default function NavBar(){
     return(
-        <Box as='nav' display="flex" background="#D9DFFD" boxShadow="0 5px 5px rgba(0, 0, 0, 0.5)" h="100px">
+        <Box as='nav' display="flex" background="#D9DFFD" boxShadow="0 5px 5px rgba(0, 0, 0, 0.5)" h="100px" zIndex="20" position="sticky">
             <Fonts/>
             <Heading alignItems="center" display="flex" ml="3rem" fontSize="32px" fontFamily="Delius Swash Caps">Jossuha Simonin</Heading>
             <Box display="flex" alignItems="center" ml="auto" mr="6rem" gap="15px">
