@@ -2,10 +2,34 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import json from "./projects.json"
 import NextLink from "next/link"
 import Head from "next/head";
+import { useEffect, useState } from "react";
+import { useDebounce } from 'use-debounce';
+
 
 export default function Projects(){
+
+    // const [value] = useDebounce(text, 1000);
+    // var bgPos = {
+    //     x: 100,
+    //     y: 100
+    // }
+    // const [bgPos, setbgPos] = useState({x: "0px", y: "0px"})
+
+    useEffect(()=>{
+        document.addEventListener("mousemove", e =>{
+
+                const header = document.querySelector("header")
+                // header.style.backgroundPositionX = `center`
+                // header.style.backgroundPositionY = `center`
+                header.style.backgroundPositionX = `calc(50% - ${e.pageX / 100}px)`
+                header.style.backgroundPositionY = `calc(50% - ${e.pageY / 100}px)`
+
+        })
+    })
+
+    // backgroundPosition: `calc(50% - ${bgPos.x}px) calc(50% - ${bgPos.y}px)`
     return(   
-        <Flex as="header" h="calc(100vh - 100px)" justifyContent="space-evenly" alignItems="center" bgImage="/media/projects/projectsBg.jpg" bgPos="center">
+        <Flex as="header" h="calc(100vh - 100px)" justifyContent="space-evenly" alignItems="center" bgImage="/media/projects/projectsBg.jpg" bgSize="110vw">
 <Head>
   <title>PortFolio Jossuha</title>
   <meta name="title" content="PortFolio Jossuha"/>

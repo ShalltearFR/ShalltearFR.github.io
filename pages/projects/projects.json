@@ -3,7 +3,6 @@
         "_id": "fishing",
         "title": "Fishing Game (Desktop Version)",
         "images": ["/media/projects/fishing/01.jpg", "/media/projects/fishing/02.jpg", "/media/projects/fishing/03.jpg", "/media/projects/fishing/04.jpg", "/media/projects/fishing/05.jpg"],
-        "backgroundImage": "/media/projects/fishing/bg.jpg",
         "backgroundColor": "#55D2FF",
         "technos": "HTML, CSS, JS, DOM, Canvas",
         "demoHref": "https://shalltearfr.github.io/Project1_Ironhack"
@@ -12,7 +11,6 @@
         "_id": "jmaterial",
         "title": "Jmaterial (Mobile Version)",
         "images": ["/media/projects/jmaterial/01.jpg", "/media/projects/jmaterial/02.jpg", "/media/projects/jmaterial/03.jpg", "/media/projects/jmaterial/04.jpg", "/media/projects/jmaterial/05.jpg", "/media/projects/jmaterial/06.jpg", "/media/projects/jmaterial/07.jpg"],
-        "backgroundImage": "/media/projects/jmaterial/bg.jpg",
         "backgroundColor": "#D00F10",
         "technos": "HTML, CSS, JS, React, NodeJs, Mongoose, JWT",
         "demoHref": "https://jmaterial.netlify.app"
